@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sorry Letter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="sorry.css">
+</head>
+
+<body>
+
+<!-- Folder / Envelope -->
+<div class="envelope" onclick="openEnvelope()">
+    <div class="envelope-front">
+        📁 Tap to open message<br>
+        <span class="sorry-highlight">I am really sorry yaar</span>
+    </div>
+</div>
+
+<!-- Letter -->
+<div class="card hidden">
+    <h1 id="title">🚨 Friendship Emergency 🚨</h1>
+
+    <p id="message">
+        Shayad maine baat ko poori tarah samajhne se pehle hi kuch keh diya.<br><br>
+        Agar meri baaton se tum hurt hui ho, toh sach mein sorry.<br><br>
+        Tumhari respect aur feelings mere liye bahut matter karti hain,
+        aur main kabhi bhi unhe hurt nahi karna chahta tha.<br><br>
+        Yaar, dil se sorry… please 🙏
+    </p>
+
+    <button class="yes" onclick="forgive()">Forgive Me 🙏</button>
+    <button class="no" onclick="notYet()">No 😤</button>
+
+    <p id="response"></p>
+
+    <audio id="music" src="music.mp3" loop></audio>
+    <audio id="paperSound" src="paper.mp3"></audio>
+</div>
+
+<script src="sorry.js"></script>
+</body>
+</html>
